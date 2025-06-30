@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Toggle Icon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="text-white" style="background-color: #131417">
+    <nav class="px-4 py-3 flex items-center justify-between relative md:hidden">
+      <button
+        id="MobileMenuButon"
+        class="focus:outline-none"
+        aria-label="Toggle menu"
+      >
+        <svg
+          id="HamburgerIcon"
+          class="hamburger-icon block w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+
+        <svg
+          id="CloseIcon"
+          class="CloseIcon hidden w-6 h-6"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 22 23"
+          fill="none"
+        >
+          <line
+            x1="2.72995"
+            y1="21.285"
+            x2="19.121"
+            y2="1.75082"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+          <line
+            x1="20.313"
+            y1="19.244"
+            x2="1.66352"
+            y2="1.85306"
+            stroke="white"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+
+      <div
+        id="MobileMenu"
+        class="hidden absolute top-full left-0 w-full space-y-2 py-4 px-4 text-right"
+        style="background-color: #2b2e2f"
+      >
+        <a href="contact.html" class="block py-4">تماس با ما</a>
+        <a href="about.html" class="block py-8">درباره ما</a>
+        <a href="index.html" class="block py-4">خانه</a>
+      </div>
+
+      <div class="flex-shrink-0">
+        <svg
+          width="36"
+          height="29"
+          viewBox="0 0 36 29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M34 11.1463L20.4011 2.67666C18.7578 1.65315 16.6713 1.67031 15.045 2.72071L2 11.1463"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M2 17.3902L15.5989 25.8599C17.2422 26.8834 19.3287 26.8663 20.955 25.8159L34 17.3902"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <circle cx="13.9024" cy="15.9024" r="3.90244" fill="#47CF73" />
+        </svg>
+      </div>
+
+      <a href="/login" class="text-base" style="color: #47cf73">
+        ثبت نام /‌ ورود
+      </a>
+    </nav>
+ <div class="hidden md:flex top-0 left-0 right-0 items-center justify-between px-6 py-4">
+      <ul class="flex gap-8 text-white text-sm font-medium">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+        <li><a href="contact.html">تماس با ما</a></li>
+      </ul>
+      <div>
+  <button class="bg-[#47cf73] text-black px-4 py-2 rounded-md">
+          ثبت نام / ورود
+  </button> </div></div>
+    <div class="p-4">
+      <img class="md:hidden" src="Assets/group.png" />
+      <img class="hidden md:block" src="Assets/group-large.png" />
+    </div>
+    <div class="p-4">
+      <div class="font-bold text-lg">درباره ما</div>
+      <div class="pt-8">
+        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+        از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+        سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+        متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+        درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+        نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+        خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+        داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+        رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+        پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+</div></div>
+    <div class="hidden md:block justify-items-center">
+      <img src="Assets/Sponser-large.png" alt="Competition illustration" />
+    </div>
+    <img class="md:hidden" src="Assets/Sponser.png" />
+    <div class="p-4">
+   <div class="font-medium text-lg pb-6">راه های ارتباطی</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 text-white text-right">
+ <div class="col-span-12 md:col-span-4">
+ <div   class="w-full flex items-center justify-between border border-white/50 rounded-md px-4 py-3">
+     <div class="flex items-center gap-2">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg" >
+                <path
+                  d="M16.4106 8.11353L12.3376 11.4255C11.568 12.036 10.4853 12.036 9.71578 11.4255L5.6084 8.11353"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.4995 19.25C18.2874 19.2577 20.1663 16.9671 20.1663 14.1518V7.85584C20.1663 5.04059 18.2874 2.75 15.4995 2.75H6.49988C3.71198 2.75 1.83301 5.04059 1.83301 7.85584V14.1518C1.83301 16.9671 3.71198 19.2577 6.49988 19.25H15.4995Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg> <span class="text-sm">ایمیل:</span>
+            </div>
+            <div class="text-sm">namadin@gmail.com</div>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-4">
+          <div
+            class="w-full flex items-center justify-between border border-white/50 rounded-md px-4 py-3" >
+            <div class="flex items-center gap-2">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_876_654)">
+                  <path
+                    d="M11 1.98183C13.937 1.98183 14.2853 1.99283 15.4449 2.046C16.6439 2.101 17.8787 2.37417 18.7523 3.24775C19.6341 4.12958 19.899 5.35242 19.954 6.55508C20.0072 7.71467 20.0182 8.063 20.0182 11C20.0182 13.937 20.0072 14.2853 19.954 15.4449C19.8999 16.6375 19.6203 17.8842 18.7523 18.7523C17.8704 19.6341 16.6485 19.899 15.4449 19.954C14.2853 20.0072 13.937 20.0182 11 20.0182C8.063 20.0182 7.71467 20.0072 6.55508 19.954C5.37167 19.8999 4.1085 19.6139 3.24775 18.7523C2.3705 17.875 2.101 16.6403 2.046 15.4449C1.99283 14.2853 1.98183 13.937 1.98183 11C1.98183 8.063 1.99283 7.71467 2.046 6.55508C2.10008 5.36708 2.38242 4.11308 3.24775 3.24775C4.12775 2.36775 5.35517 2.101 6.55508 2.046C7.71467 1.99283 8.063 1.98183 11 1.98183ZM11 0C8.01258 0 7.63767 0.0128333 6.46433 0.066C4.76392 0.143917 3.07542 0.616917 1.84617 1.84617C0.612333 3.08 0.143917 4.76483 0.066 6.46433C0.0128333 7.63767 0 8.01258 0 11C0 13.9874 0.0128333 14.3623 0.066 15.5357C0.143917 17.2343 0.61875 18.9273 1.84617 20.1538C3.07908 21.3868 4.76667 21.8561 6.46433 21.934C7.63767 21.9872 8.01258 22 11 22C13.9874 22 14.3623 21.9872 15.5357 21.934C17.2352 21.8561 18.9255 21.3822 20.1538 20.1538C21.3886 18.9191 21.8561 17.2352 21.934 15.5357C21.9872 14.3623 22 13.9874 22 11C22 8.01258 21.9872 7.63767 21.934 6.46433C21.8561 4.76392 21.3822 3.0745 20.1538 1.84617C18.9228 0.615083 17.2306 0.143 15.5357 0.066C14.3623 0.0128333 13.9874 0 11 0Z"
+                    fill="white"
+                    fill-opacity="0.8"/>
+                  <path
+                    d="M11.0001 5.35144C7.88064 5.35144 5.35156 7.88052 5.35156 10.9999C5.35156 14.1194 7.88064 16.6484 11.0001 16.6484C14.1195 16.6484 16.6486 14.1194 16.6486 10.9999C16.6486 7.88052 14.1195 5.35144 11.0001 5.35144ZM11.0001 14.6666C8.97514 14.6666 7.33339 13.0249 7.33339 10.9999C7.33339 8.97502 8.97514 7.33327 11.0001 7.33327C13.025 7.33327 14.6667 8.97502 14.6667 10.9999C14.6667 13.0249 13.025 14.6666 11.0001 14.6666Z"
+                    fill="white"
+                    fill-opacity="0.8" />
+                  <path
+                    d="M16.8722 6.44786C17.6013 6.44786 18.1922 5.85688 18.1922 5.12786C18.1922 4.39885 17.6013 3.80786 16.8722 3.80786C16.1432 3.80786 15.5522 4.39885 15.5522 5.12786C15.5522 5.85688 16.1432 6.44786 16.8722 6.44786Z"
+                    fill="white"
+                    fill-opacity="0.8" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_876_654">
+                    <rect width="22" height="22" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="text-sm">اینستاگرام:</span>
+            </div>
+            <div class="text-sm">@ubcomp4</div>  </div> </div>
+        <div class="col-span-12 md:col-span-4">
+     <div class="w-full flex items-center justify-between border border-white/50 rounded-md px-4 py-3">
+            <div class="flex items-center gap-2">
+              <svg
+                width="22"
+                height="19"
+                viewBox="0 0 22 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg" >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M10.5706 10.1013C14.2273 13.1436 15.0568 9.62402 17.385 11.5603C19.6296 13.4277 20.9197 13.8019 18.0758 16.168C17.7196 16.4062 15.4563 19.2725 7.50239 12.6549C-0.452518 6.03644 2.98962 4.15095 3.27598 3.85458C6.12672 1.48196 6.56854 2.56184 8.81312 4.42931C11.1413 6.36638 6.91394 7.059 10.5706 10.1013Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+              stroke-linejoin="round"
+                />
+        </svg>
+       <span class="text-sm">شماره کارشناس:</span> </div>
+       <div class="text-sm">0935 4444 274</div>  </div></div></div></div>
+</body>
+</html>
